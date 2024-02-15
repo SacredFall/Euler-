@@ -5,20 +5,26 @@
 #Find the sum of all the multiples of 3 or 5 below N.
 
 multiple = []
-testcase = input('How much test cases: ')
+tests = []
+testcase = int(input('How much test cases: '))
+
+for i in range(1,testcase+1):
+    x = input(f'What is your {i} test case?\n > ')
+    tests.append(x)
+
 N = int(input("Your Number: "))
 sum = 0
+def multiplesum():
+    for i in range(1,N):
+        if i%3 == 0:
+            multiple.append(int(i))
+        elif i%5 == 0:
+            multiple.append(int(i))
 
-for i in range(1,N):
-    if i%3 == 0:
-        multiple.append(int(i))
-    elif i%5 == 0:
-        multiple.append(int(i))
+    for i in range(0,len(multiple)):
+        sum += multiple[i]
 
-for i in range(0,len(multiple)):
-    sum += multiple[i]
-
-print(sum)
+print(tests)
     
 
 
