@@ -4,10 +4,29 @@
 testcases = int(input())
 tests = []
 
+
 for i in range (testcases):
     x = input('')  #amount of test cases
     tests.append(i)
 
 def Fibonacci():
-    for i in range(testcases):
-        
+    term1 = 0
+    term2 = 1
+    next_term = term2
+    x = 0
+    N = 10 #n'th term
+    global Sequence
+    Sequence =[]
+    while x <= (N):
+        x += 1
+        Sequence.append(next_term)
+        term1 = term2
+        term2 = next_term
+        next_term = term1 + term2
+
+Fibonacci()
+print(Sequence)
+
+    
+         
+ 
