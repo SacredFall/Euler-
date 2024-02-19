@@ -17,7 +17,7 @@ def primechecking():
         if c==1:
             primefactors.append(i)
 
-factorchecking(57)
+factorchecking(52)
 primechecking()
 print(primefactors)
 
