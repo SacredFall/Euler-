@@ -3,8 +3,9 @@
 
 testcases = int(input())
 tests = []
-
-
+total = 0
+N = 31 #n'th term
+Sequence =[]
 for i in range (testcases):
     x = input('')  #amount of test cases
     tests.append(i)
@@ -14,9 +15,6 @@ def Fibonacci():
     term2 = 1
     next_term = term2
     x = 0
-    N = 10 #n'th term
-    global Sequence
-    Sequence =[]
     while x <= (N):
         x += 1
         Sequence.append(next_term)
@@ -24,9 +22,10 @@ def Fibonacci():
         term2 = next_term
         next_term = term1 + term2
 
+
 Fibonacci()
 print(Sequence)
-
+print(total)
     
          
  
