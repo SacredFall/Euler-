@@ -20,6 +20,6 @@ n =  '''73167176531330624919225119674426574742355349194934
 71636269561882670428252483600823257530420752963450'''
 products = []
 for i in range(987):
-    products.append(n[1+i]*n[13+i])
+    products.append(int(n[1+i])*int(n[13+i]))
 
 print(max(products))
